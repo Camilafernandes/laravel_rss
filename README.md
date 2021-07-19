@@ -10,7 +10,6 @@ Execute os seguintes comandos:
 
 ```bash
 cp .env.example .env
-cp docker-compose.yml-example docker-compose.yml
 ```
 
 ## Levantar ambiente 
