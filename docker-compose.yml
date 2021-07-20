@@ -1,11 +1,11 @@
 version: '2'
-services:
 
+services:
   # The Application
   app:
     build:
       context: ./
-      dockerfile: docker/app.docker
+      dockerfile: docker/app.dockerfile
     working_dir: /var/www
     volumes:
       - ./:/var/www
@@ -14,12 +14,14 @@ services:
   web:
     build:
       context: ./
-      dockerfile: docker/web.docker
+      dockerfile: docker/web.dockerfile
     working_dir: /var/www
+    container_name: web
     volumes_from:
       - app
     ports:
       - 8080:80
+  
 
 volumes:
   dbdata:

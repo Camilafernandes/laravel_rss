@@ -1,5 +1,0 @@
-FROM php:7.4.5-fpm-alpine
-
-RUN apk update
-
-WORKDIR /var/www
