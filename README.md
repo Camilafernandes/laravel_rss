@@ -12,10 +12,16 @@ Execute os seguintes comandos:
 cp .env.example .env
 ```
 
+## Permissão logs
+
+```bash
+chmod -R 777 storage/*
+```
+
 ## Levantar ambiente 
 
 ```bash
-docker-compose up
+docker-compose up --build
 ```
 
 ## Testando aplicação
